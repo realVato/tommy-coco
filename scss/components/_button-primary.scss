@@ -1,0 +1,33 @@
+// BTN-PRIMARY DEFAULT
+.btn-primary-lg,
+.btn-primary-md,
+.btn-primary-sm {
+    background-color: $dark-navy-blue;
+    border-radius: 2px;
+    @include very-mild-shadow;
+}
+
+// BTN-PRIMARY PADDING
+.btn-primary-lg { padding: 1rem 1.5rem; }
+.btn-primary-md { padding: 0.8rem 1.3rem; }
+.btn-primary-sm { padding: 0.5rem 0.7rem; }
+
+// BTN-PRIMARY HOVER
+.btn-primary-lg:hover,
+.btn-primary-md:hover,
+.btn-primary-sm:hover {
+    background-color: $light-navy-blue;
+    color: $dark-white;
+}
+
+// BTN-ARROW DEFAULT
+.btn-arrow {
+    border-radius: 50%;
+    @include slightly-mild-shadow;
+}
+
+// BTN-ARROW HOVER
+.btn-arrow:hover {
+    color: $black;
+    @include mild-shadow;
+}

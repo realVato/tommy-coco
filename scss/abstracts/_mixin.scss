@@ -1,0 +1,18 @@
+// Shadows
+@mixin very-mild-shadow {
+    -webkit-box-shadow: $very-mild-shadow;
+    -moz-box-shadow: $very-mild-shadow;
+    box-shadow: $very-mild-shadow;
+}
+
+@mixin slightly-mild-shadow {
+    -webkit-box-shadow: $slightly-mild-shadow;
+    -moz-box-shadow: $slightly-mild-shadow;
+    box-shadow: $slightly-mild-shadow;
+}
+
+@mixin mild-shadow {
+    -webkit-box-shadow: $mild-shadow;
+    -moz-box-shadow: $mild-shadow;
+    box-shadow: $mild-shadow;
+}
