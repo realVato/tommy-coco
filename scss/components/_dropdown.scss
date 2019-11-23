@@ -7,10 +7,10 @@
     position: absolute;
     min-width: 220px;
     z-index: 1;
-    @include very-mild-shadow;
+    box-shadow: $very-mild-shadow;
     border-radius: 10px;
+    background-color: $white;
     
-
     a {
         display: block;
         margin: 0.3rem;
