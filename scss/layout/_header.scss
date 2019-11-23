@@ -50,7 +50,7 @@ li:first-child {
 
     li:hover {
         border-radius: 10px;
-        @include very-mild-shadow;
+        box-shadow: $very-mild-shadow;
     }
 }
 
@@ -71,6 +71,7 @@ li:first-child {
             left: 0;
             background: $dark-navy-blue;
             border-top: solid 1px $red;
+            z-index: 10;
 
             li {
                 display: block;
