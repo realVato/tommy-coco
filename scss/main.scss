@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-// ABSTRATS
+// ABSTRACTS
 @import
     'abstracts/variables',
     'abstracts/mixin';
@@ -19,4 +19,5 @@
 
 // LAYOUT
 @import
-    'layout/header';
+    'layout/header',
+    'layout/hero-showcase';
