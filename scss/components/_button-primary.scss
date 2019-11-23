@@ -4,7 +4,7 @@
 .btn-primary-sm {
     background-color: $dark-navy-blue;
     border-radius: 2px;
-    @include very-mild-shadow;
+    box-shadow: $very-mild-shadow;
 }
 
 // BTN-PRIMARY PADDING
@@ -23,11 +23,11 @@
 // BTN-ARROW DEFAULT
 .btn-arrow {
     border-radius: 50%;
-    @include slightly-mild-shadow;
+    box-shadow: $slightly-mild-shadow;
 }
 
 // BTN-ARROW HOVER
 .btn-arrow:hover {
     color: $black;
-    @include mild-shadow;
+    box-shadow: $mild-shadow;
 }

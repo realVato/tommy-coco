@@ -5,7 +5,7 @@
     background-color: $white;
     color: $black;
     border-radius: 2px;
-    @include mild-shadow;
+    box-shadow: $mild-shadow;
 }
 
 // BTN-SECONDARY PADDING
@@ -18,8 +18,8 @@
 .btn-secondary-md:hover,
 .btn-secondary-sm:hover {
     background-color: $light-grey;
-    color: $dark-white;
-    @include mild-shadow;
+    color: $black;
+    box-shadow: $mild-shadow;
 }
 
 // BTN-ZOOOM HOVER
