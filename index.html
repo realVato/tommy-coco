@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- MAIN STYLING -->
     <link rel="stylesheet" href="/css/main.css">
+    <!-- JS Navigation -->
     <script defer src="/scripts/navigation.js"></script>
+    <!-- Font Awesome -->
     <script defer src="https://kit.fontawesome.com/2ff57d8026.js"></script>
+    <!-- jQuery -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- SlickJS -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JS Slider -->
+    <script defer src="/scripts/slider.js"></script>
     <title>Tommy Coco</title>
 </head>
 <body>
@@ -14,10 +23,13 @@
     <header>
         <nav>
             <ul>
+                <!-- Logo -->
                 <li>
                     <a href="#" class="logo"><img src="/icons tommy coco/tc-logo.svg"></a>
                 </li>
+                <!-- Nav list items / responsive nav-->
                 <div id="responsive-nav" class="responsive-nav">
+                    <!-- Dropdown -->
                     <li class="dropdown">
                         <a class="active" href="#">COLLECTIONS</a>
                         <div class="dropdown-container">
@@ -29,6 +41,7 @@
                             </div>
                         </div>
                     </li>
+                    <!-- // Dropdown -->
                     <li>
                         <a href="#">OUR STORY</a>
                     </li>
@@ -40,9 +53,11 @@
                     </li>
                 </div>
                 <li>
+                    <!-- mQuery hamburger -->
                     <li class="nav-toggle">
                         <a href="#" id="nav-toggle-button"><i class="fas fa-bars"></i></a>
                     </li>
+                    <!-- Icons fixed at right -->
                     <ul class="extra-nav">
                         <li>
                             <a href="#"><img src="/icons tommy coco/tc-search.svg"></a>
@@ -59,9 +74,10 @@
         </nav>
     </header>
 
-    <!-- HERO-SHOWCASE -->
+    <!-- HERO GRID SHOWCASE -->
     <section>
         <div class="grid-container">
+            <!-- Hero container -->
             <div class="hero-container">
                 <div class="hero-img"></div>
                 <div class="overlay"></div>
@@ -71,8 +87,13 @@
                     <h2>WINTER ACTION</h2>
                 </div>
                 <a class="btn-secondary-lg" href="#">SHOP NOW</a>
+                <div class="btn-scroll">
+                    <h4>SCROLL</h4>
+                    <a href="#"><img class="btn-arrow scroll-down" src="/icons tommy coco/tc-arr-down-white.svg"></a>
+                </div>
             </div>
             <!-- side boxes -->
+            <!-- side box A -->
             <div class="side-box box-a">
                 <div class="box-a-img"></div>
                 <div class="overlay"></div>
@@ -81,6 +102,7 @@
                     <h2 class="bold">UP TO 80% OFF</h2>
                 </div>
             </div>
+            <!-- side box b -->
             <div class="side-box box-b">
                 <div class="box-b-img"></div>
                 <div class="overlay"></div>
@@ -90,5 +112,161 @@
             </div>
         </div>
     </section>
+
+    <!-- ITEM SLIDER -->
+    <div class="pager-wrapper">
+        <!-- Item slider -->
+        <div class="item-slider">
+            <!-- Previous/Next buttons -->
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <!-- Slider title -->
+            <h1 class="slider-title">JUST IN</h1>
+            <!-- Item wrapper -->
+            <div class="item-wrapper">
+                <div class="item">
+                    <img class="slider-image" src="/images/clothing.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gives 150hp</p>
+                        <h3>Clothmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                <!-- discount price -->
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/images/gear.jpg" alt="">
+                    <div class="item-info">
+                        <p>Level 3 armor</p>
+                        <h3>Gearmania</h3>
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/images/gloves.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gauntlents for climbing a sky</p>
+                        <h3>Glovemania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/images/boards.jpg" alt="">
+                    <div class="item-info">
+                        <p>Manual transmission boards</p>
+                        <h3>Boardmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/images/boots.jpg" alt="">
+                    <div class="item-info">
+                        <p>Designed for walking on lava</p>
+                        <h3>Bootmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/images/glassess.jpg" alt="">
+                    <div class="item-info">
+                        <p>Bulletproof/X-RAY glassess</p>
+                        <h3>Glassmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // ITEM-SLIDER -->
+
+    <!-- Spacing / Line -->
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <!-- 2nd ITEM SLIDER -->
+    <div class="pager-wrapper">
+        <!-- Item slider -->
+        <div class="item-slider">
+            <!-- Previous/Next buttons -->
+            <i class="fas fa-chevron-left prev-2"></i>
+            <i class="fas fa-chevron-right next-2"></i>
+            <!-- Slider title -->
+            <h1 class="slider-title">MOST POPULAR</h1>
+            <!-- Item wrapper -->
+            <div class="item-wrapper-2">
+                <div class="item">
+                    <img class="slider-image" src="/images/gear.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gives 150hp</p>
+                        <h3>Clothmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                <!-- discount price -->
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/images/clothing.jpg" alt="">
+                    <div class="item-info">
+                        <p>Level 3 armor</p>
+                        <h3>Gearmania</h3>
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/images/boards.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gauntlents for climbing a sky</p>
+                        <h3>Glovemania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/images/gloves.jpg" alt="">
+                    <div class="item-info">
+                        <p>Manual transmission boards</p>
+                        <h3>Boardmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/images//glassess.jpg" alt="">
+                    <div class="item-info">
+                        <p>Designed for walking on lava</p>
+                        <h3>Bootmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/images/boots.jpg" alt="">
+                    <div class="item-info">
+                        <p>Bulletproof/X-RAY glassess</p>
+                        <h3>Glassmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- // 2nd ITEM SLIDER -->
+
+
+
+    
 </body>
 </html>
