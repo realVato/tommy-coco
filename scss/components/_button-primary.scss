@@ -24,6 +24,8 @@
 .btn-arrow {
     border-radius: 50%;
     box-shadow: $slightly-mild-shadow;
+    z-index: 1;
+    padding: 1rem;
 }
 
 // BTN-ARROW HOVER
