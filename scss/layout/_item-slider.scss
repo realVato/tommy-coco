@@ -1,3 +1,9 @@
+// Line between item-slider 1 and item-slider 2
+hr {
+    max-width: 90%;
+    border: 1px solid $light-grey;
+}
+
 .item-slider {
     position: relative;
     
@@ -11,16 +17,16 @@
     .next,
     .next-2 {
         position: absolute;
-        top: 50%;
-        right: 1rem;
+        top: 40%;
+        right: 5%;
     }
 
     // PREVIOUS button
     .prev,
     .prev-2 {
         position: absolute;
-        top: 50%;
-        left: 1rem;
+        top: 40%;
+        left: 5%;
     }
 }
 
@@ -47,9 +53,20 @@
         background-color: $red;
         color: $white;
     }
+
+    // brand name underlines
+    h3:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.item:hover {
+    box-shadow: $very-mild-shadow;
 }
 
 .item-info {
+    position: relative;
     text-align: center;
     height: 130px;
 
@@ -68,10 +85,12 @@
     .line-through {
         position: absolute;
         left: 50%;
-        bottom: 10%;
+        bottom: -30%;
         transform: translateX(-50%);
         text-decoration: line-through;
+        
     }
+
 }
 
 .slider-image {
@@ -79,6 +98,64 @@
     height: 200px;
 }
 
-.item:hover {
-    box-shadow: $very-mild-shadow;
+@media screen and (max-width: 1100px) {
+    .item-slider {
+
+        // NEXT button
+        .next,
+        .next-2 {
+            right: 3%;
+        }
+
+        // PREVIOUS button
+        .prev,
+        .prev-2 {
+            left: 3%;
+        }
+    }
+
+    .item-info {
+
+        p {
+            display: none;
+        }
+
+        .line-through {
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .item-slider {
+
+        // NEXT button
+        .next,
+        .next-2 {
+            right: 1%;
+        }
+
+        // PREVIOUS button
+        .prev,
+        .prev-2 {
+            left: 1%;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .item-slider {
+
+        // NEXT button
+        .next,
+        .next-2 {
+            right: 0;
+        }
+
+        // PREVIOUS button
+        .prev,
+        .prev-2 {
+            left: 0;
+        }
+    }
 }
