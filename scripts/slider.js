@@ -3,7 +3,7 @@ $('.item-wrapper').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
     responsive: [{
@@ -37,7 +37,7 @@ $('.item-wrapper-2').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     nextArrow: $('.next-2'),
     prevArrow: $('.prev-2'),
     responsive: [{
