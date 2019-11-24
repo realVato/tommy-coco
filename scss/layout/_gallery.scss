@@ -6,6 +6,10 @@
     a > img {
         max-width: 1.2rem;
     }
+
+    a:hover {
+        color: $white;
+    }
 }
 
 // photos
