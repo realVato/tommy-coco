@@ -58,6 +58,26 @@
         h1 { color: $white; }
         h2  { color: $white; }
     }
+
+    .btn-scroll {
+        position: absolute;
+        text-align: center;
+        bottom: 5rem;
+        
+        
+        h4 {
+            color: $white;
+            margin-bottom: 0.5rem;
+        }
+
+        .scroll-down {
+            max-width: 60px;
+            border: 1px solid $white;
+            animation: pulse 2s ease-in-out infinite;
+        }
+    }
+
+    @include animation-pulse;
 }
 
 // all boxes within grid-container
