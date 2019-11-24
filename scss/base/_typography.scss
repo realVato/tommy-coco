@@ -8,6 +8,7 @@ h1,
 h2,
 h3,
 h4,
+span,
 p { font-weight: 400; }
 
 h1 {
@@ -35,6 +36,12 @@ h3 {
 h4 {
     font-size: 18px;
     color: $dark-navy-blue;
+}
+
+span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: $white;
 }
 
 p {
