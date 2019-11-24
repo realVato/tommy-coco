@@ -22,14 +22,22 @@
 
 // BTN-ARROW DEFAULT
 .btn-arrow {
+    max-width: 50px;
     border-radius: 50%;
     box-shadow: $slightly-mild-shadow;
     z-index: 1;
     padding: 1rem;
+    cursor: pointer;
 }
 
 // BTN-ARROW HOVER
 .btn-arrow:hover {
     color: $black;
     box-shadow: $mild-shadow;
+}
+
+@media screen and (max-width: 550px) {
+    .btn-arrow {
+        max-width: 40px;
+    }
 }
