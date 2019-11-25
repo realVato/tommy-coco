@@ -39,7 +39,7 @@
     
     .hero-img {
         @include absolute;
-        background: url('/images/snowboarder.jpg') no-repeat center center/cover; 
+        background: url('../images/snowboarder.jpg') no-repeat center center/cover; 
         transition: transform 1s;
     }
 
@@ -107,7 +107,7 @@
     
     .box-a-img {
         @include absolute;
-        background: url('/images/snowboarder\ side-a.jpg') no-repeat center center/cover;
+        background: url('../images/snowboarder\ side-a.jpg') no-repeat center center/cover;
         transition: transform 1s;
     }
 
@@ -124,7 +124,7 @@
 
     .box-b-img {
         @include absolute;
-        background: url('/images/snowboarder\ side-b.jpg') no-repeat center center/cover;
+        background: url('../images/snowboarder\ side-b.jpg') no-repeat center center/cover;
         transition: transform 1s;
     }
 
